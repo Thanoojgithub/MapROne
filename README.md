@@ -103,7 +103,7 @@ ubuntu@ubuntu:~$ hadoop fs -cat   /hdfsInput.txt
 
 ubuntu@ubuntu:~$ hadoop fs -rm -r /hdfsInput.txt
 ubuntu@ubuntu:~$ hadoop fs -copyFromLocal input/input.txt   /hdfsInput.txt
-untu:~$ hadoop fs -rm -r /output
+ubuntu@ubuntu::~$ hadoop fs -rm -r /output
 ubuntu@ubuntu:~$ hadoop jar MaxTemparature.jar com.mapr.MaxTemparature /hdfsInput.txt /output
 ubuntu@ubuntu:~$ hadoop fs -cat   /output/*
 
