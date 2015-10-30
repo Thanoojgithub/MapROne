@@ -122,6 +122,7 @@ hadoop jar /home/ubuntu/WordCount.jar com.impetus.basic.mapper.WordCount /akovi/
 
 
 ----------------------------------------------------------------------------
+
 ubuntu@ubuntu:~$ hadoop fs -copyFromLocal input/input.txt   /hdfsInput.txt
 
 
@@ -131,6 +132,7 @@ Deleted /hdfsInput.txt
 
 
 ubuntu@ubuntu:~$ hadoop fs -cat   /hdfsInput.txt
+
 --------------------------------------------------------------------
 
   ubuntu@ubuntu:~$ hadoop fs -rm -r /hdfsInput.txt
