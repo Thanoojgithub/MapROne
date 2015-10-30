@@ -105,7 +105,9 @@ ubuntu@ubuntu:~$ hadoop fs -rm -r /hdfsInput.txt
 ubuntu@ubuntu:~$ hadoop fs -copyFromLocal input/input.txt   /hdfsInput.txt
 ubuntu@ubuntu::~$ hadoop fs -rm -r /output
 ubuntu@ubuntu:~$ hadoop jar MaxTemparature.jar com.mapr.MaxTemparature /hdfsInput.txt /output
- ubuntu@ubuntu:~$ hadoop fs -cat   /output/*
+
+ubuntu@ubuntu:~$ hadoop fs -cat   /output/*
+
 ----------------------------------------
 Note :: 
 http://hadooped.blogspot.in/2013/09/sample-code-for-secondary-sort.html
