@@ -59,11 +59,11 @@ public class GroupByColorDriver extends Configured implements Tool {
 	public int run(String[] args) throws Exception {
 		if (args.length != 2) {
 			System.out
-					.printf("Two parameters are required for SecondarySortBasicDriver- <input dir> <output dir>\n");
+					.printf("GroupByColorDriver\n");
 			return -1;
 		}
 
-		Job job = Job.getInstance(getConf(), "Secondary sort example");
+		Job job = Job.getInstance(getConf(), "GroupByColorDriver");
 
 		job.setJarByClass(GroupByColorDriver.class);
 		FileInputFormat.setInputPaths(job, new Path(args[0]));
