@@ -1,5 +1,5 @@
 # MapROne
-Hadoop Map Reduce basics
+<font color="red">Hadoop Map Reduce basics</font>
 
 
 ubuntu@ubuntu:~$ clear
