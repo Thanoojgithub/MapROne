@@ -58,8 +58,7 @@ public class GroupByColorDriver extends Configured implements Tool {
 	@Override
 	public int run(String[] args) throws Exception {
 		if (args.length != 2) {
-			System.out
-					.printf("GroupByColorDriver\n");
+			System.out.printf("GroupByColorDriver\n");
 			return -1;
 		}
 
