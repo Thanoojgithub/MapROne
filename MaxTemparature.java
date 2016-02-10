@@ -25,24 +25,24 @@ class MaxTemperatureMapper extends
 	protected void setup(
 			Mapper<LongWritable, Text, Text, IntWritable>.Context context)
 			throws IOException, InterruptedException {
-		System.out.println("MaxTemperatureMapper.setup()");
 		super.setup(context);
+		System.out.println("MaxTemperatureMapper.setup()");
 	}
 
 	@Override
 	public void run(
 			Mapper<LongWritable, Text, Text, IntWritable>.Context context)
 			throws IOException, InterruptedException {
-		System.out.println("MaxTemperatureMapper.run()");
 		super.run(context);
+		System.out.println("MaxTemperatureMapper.run()");
 	}
 
 	@Override
 	protected void cleanup(
 			Mapper<LongWritable, Text, Text, IntWritable>.Context context)
 			throws IOException, InterruptedException {
-		System.out.println("MaxTemperatureMapper.cleanup()");
 		super.cleanup(context);
+		System.out.println("MaxTemperatureMapper.cleanup()");
 	}
 /*
  * 
@@ -79,23 +79,23 @@ class MaxTemperatureReducer extends
 	protected void cleanup(
 			Reducer<Text, IntWritable, Text, IntWritable>.Context context)
 			throws IOException, InterruptedException {
-		System.out.println("MaxTemperatureReducer.cleanup()");
 		super.cleanup(context);
+		System.out.println("MaxTemperatureReducer.cleanup()");
 	}
 
 	@Override
 	protected void setup(
 			Reducer<Text, IntWritable, Text, IntWritable>.Context context)
 			throws IOException, InterruptedException {
-		System.out.println("MaxTemperatureReducer.setup()");
 		super.setup(context);
+		System.out.println("MaxTemperatureReducer.setup()");
 	}
 
 	@Override
 	public void run(Reducer<Text, IntWritable, Text, IntWritable>.Context arg0)
 			throws IOException, InterruptedException {
-		System.out.println("MaxTemperatureReducer.run()");
 		super.run(arg0);
+		System.out.println("MaxTemperatureReducer.run()");
 	}
 
 	@Override
@@ -114,8 +114,7 @@ public class MaxTemparature {
 
 	public static void main(String[] args) {
 		if (args.length != 2) {
-			System.err
-					.println("Usage: MaxTemperature <input path> <output path>");
+			System.err.println("Usage: MaxTemperature <input path> <output path>");
 			System.exit(-1);
 		}
 		try {
